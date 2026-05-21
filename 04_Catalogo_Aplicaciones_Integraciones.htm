@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Aplicaciones e Integraciones</title>
+    
+<style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.7;
+        color: #333;
+        background-color: #fff;
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 30px 20px;
+    }
+    h1 {
+        color: #1F4E79;
+        font-size: 28px;
+        border-bottom: 3px solid #1F4E79;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
+    h2 {
+        color: #1F4E79;
+        font-size: 22px;
+        margin-top: 30px;
+        margin-bottom: 12px;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 6px;
+    }
+    h3 {
+        color: #2E75B6;
+        font-size: 18px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    p {
+        margin-bottom: 12px;
+        font-size: 15px;
+    }
+    .subtitle {
+        color: #666;
+        font-size: 16px;
+        margin-bottom: 25px;
+        font-style: italic;
+    }
+    ul, ol {
+        margin-left: 25px;
+        margin-bottom: 15px;
+    }
+    li {
+        margin-bottom: 6px;
+        font-size: 15px;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        font-size: 14px;
+    }
+    th {
+        background-color: #1F4E79;
+        color: white;
+        padding: 10px 12px;
+        text-align: left;
+        font-weight: 600;
+    }
+    td {
+        padding: 9px 12px;
+        border: 1px solid #ddd;
+    }
+    tr:nth-child(even) { background-color: #f5f8fc; }
+    tr:hover { background-color: #e8f0fe; }
+    .nav {
+        background-color: #1F4E79;
+        padding: 12px 20px;
+        margin: -30px -20px 30px -20px;
+        text-align: center;
+    }
+    .nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 14px;
+    }
+    .nav a:hover { text-decoration: underline; }
+    .index-list {
+        list-style: none;
+        margin-left: 0;
+        padding: 0;
+    }
+    .index-list li {
+        margin-bottom: 15px;
+        padding: 15px 20px;
+        background: #f5f8fc;
+        border-left: 4px solid #1F4E79;
+        border-radius: 4px;
+    }
+    .index-list li a {
+        color: #1F4E79;
+        text-decoration: none;
+        font-size: 17px;
+        font-weight: 600;
+    }
+    .index-list li a:hover { text-decoration: underline; }
+    .index-list li p {
+        color: #666;
+        font-size: 14px;
+        margin-top: 5px;
+        margin-bottom: 0;
+    }
+</style>
+
+</head>
+<body>
+<div class="nav"><a href="index.html">← Volver al índice</a></div><h1>Catálogo de aplicaciones e integraciones</h1><p class="subtitle">Documento ejemplo para contextualizar el landscape actual de la organización.</p><table><thead><tr><th>Valor para el agente
+Cuando el agente propone una arquitectura, este documento le permite reconocer restricciones reales, sistemas existentes, dueños y dependencias.</th></tr></thead></table><h2>Aplicaciones principales</h2><table><thead><tr><th>Aplicación</th><th>Dominio</th><th>Propietario</th><th>Criticidad</th><th>Observaciones</th></tr></thead><tbody><tr><td>ERP Corporativo</td><td>Finanzas y abastecimiento</td><td>Gerencia Financiera</td><td>Alta</td><td>Fuente principal para proveedores, órdenes y costos.</td></tr><tr><td>CRM Comercial</td><td>Clientes y oportunidades</td><td>Dirección Comercial</td><td>Alta</td><td>Gestiona cuentas, contactos, oportunidades y casos.</td></tr><tr><td>SharePoint Online</td><td>Gestión documental</td><td>TI Digital Workplace</td><td>Media</td><td>Repositorio corporativo para políticas, plantillas y expedientes.</td></tr><tr><td>Plataforma de BI</td><td>Analítica y reporting</td><td>Oficina de Datos</td><td>Alta</td><td>Exhibe KPIs ejecutivos y tableros operativos.</td></tr><tr><td>Servicio de identidad</td><td>Autenticación y acceso</td><td>Ciberseguridad</td><td>Alta</td><td>Control centralizado de acceso y grupos.</td></tr><tr><td>Mesa de servicios</td><td>Soporte TI</td><td>Operaciones TI</td><td>Media</td><td>Registro de incidentes y solicitudes internas.</td></tr></tbody></table><h2>Integraciones relevantes</h2><table><thead><tr><th>Origen</th><th>Destino</th><th>Patrón</th><th>Frecuencia</th><th>Riesgo principal</th></tr></thead><tbody><tr><td>CRM</td><td>ERP</td><td>API síncrona</td><td>Tiempo real</td><td>Dependencia de disponibilidad del ERP</td></tr><tr><td>ERP</td><td>BI</td><td>Carga programada</td><td>Diaria</td><td>Calidad y latencia del dato</td></tr><tr><td>Portal</td><td>CRM</td><td>API / eventos</td><td>Casi real</td><td>Validación de identidad y duplicados</td></tr><tr><td>SharePoint</td><td>Agente IA</td><td>Grounding documental</td><td>Bajo demanda</td><td>Información obsoleta o duplicada</td></tr><tr><td>Mesa de servicio</td><td>BI</td><td>Batch</td><td>Cada 4 horas</td><td>Inconsistencia de estados</td></tr></tbody></table><h2>Restricciones conocidas del paisaje actual</h2><ul><li>Existen sistemas legados sin APIs modernas en algunos dominios.</li><li>No todas las aplicaciones poseen dueño técnico formalmente asignado.</li><li>Hay duplicidad parcial de datos maestros entre CRM y ERP.</li><li>Algunos indicadores ejecutivos dependen de conciliaciones manuales.</li><li>La documentación funcional no siempre está actualizada en las plataformas vigentes.</li></ul>
+</body>
+</html>

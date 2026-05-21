@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patrones de Arquitectura de Referencia</title>
+    
+<style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.7;
+        color: #333;
+        background-color: #fff;
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 30px 20px;
+    }
+    h1 {
+        color: #1F4E79;
+        font-size: 28px;
+        border-bottom: 3px solid #1F4E79;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
+    h2 {
+        color: #1F4E79;
+        font-size: 22px;
+        margin-top: 30px;
+        margin-bottom: 12px;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 6px;
+    }
+    h3 {
+        color: #2E75B6;
+        font-size: 18px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    p {
+        margin-bottom: 12px;
+        font-size: 15px;
+    }
+    .subtitle {
+        color: #666;
+        font-size: 16px;
+        margin-bottom: 25px;
+        font-style: italic;
+    }
+    ul, ol {
+        margin-left: 25px;
+        margin-bottom: 15px;
+    }
+    li {
+        margin-bottom: 6px;
+        font-size: 15px;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        font-size: 14px;
+    }
+    th {
+        background-color: #1F4E79;
+        color: white;
+        padding: 10px 12px;
+        text-align: left;
+        font-weight: 600;
+    }
+    td {
+        padding: 9px 12px;
+        border: 1px solid #ddd;
+    }
+    tr:nth-child(even) { background-color: #f5f8fc; }
+    tr:hover { background-color: #e8f0fe; }
+    .nav {
+        background-color: #1F4E79;
+        padding: 12px 20px;
+        margin: -30px -20px 30px -20px;
+        text-align: center;
+    }
+    .nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 14px;
+    }
+    .nav a:hover { text-decoration: underline; }
+    .index-list {
+        list-style: none;
+        margin-left: 0;
+        padding: 0;
+    }
+    .index-list li {
+        margin-bottom: 15px;
+        padding: 15px 20px;
+        background: #f5f8fc;
+        border-left: 4px solid #1F4E79;
+        border-radius: 4px;
+    }
+    .index-list li a {
+        color: #1F4E79;
+        text-decoration: none;
+        font-size: 17px;
+        font-weight: 600;
+    }
+    .index-list li a:hover { text-decoration: underline; }
+    .index-list li p {
+        color: #666;
+        font-size: 14px;
+        margin-top: 5px;
+        margin-bottom: 0;
+    }
+</style>
+
+</head>
+<body>
+<div class="nav"><a href="index.html">← Volver al índice</a></div><h1>Patrones de arquitectura de referencia</h1><p class="subtitle">Documento ejemplo para que el agente proponga soluciones reutilizando patrones aprobados.</p><table><thead><tr><th>Intención
+El agente debe reconocer cuál patrón se ajusta mejor al caso, cuándo usarlo y qué riesgos vigilar al implementarlo.</th></tr></thead></table><table><thead><tr><th>Código</th><th>Patrón</th><th>Descripción</th><th>Cuándo usarlo</th><th>Puntos de atención</th></tr></thead><tbody><tr><td>PA-01</td><td>Portal + procesos + datos</td><td>Canal digital para clientes o colaboradores con autenticación, formularios, automatización y trazabilidad.</td><td>Atención ciudadana, onboarding, autoservicio, solicitudes internas.</td><td>Gobierno de identidades, validación documental y segregación de funciones.</td></tr><tr><td>PA-02</td><td>Caso 360 con CRM</td><td>Gestión centralizada de casos, interacciones, SLA y conocimiento.</td><td>Servicio al cliente, PQRS, gestión de reclamos y backoffice.</td><td>Modelo de datos, colas, reglas de asignación y reporting.</td></tr><tr><td>PA-03</td><td>Hub de integración API/eventos</td><td>Capa de servicios y eventos para orquestar múltiples sistemas.</td><td>Modernización, desacoplamiento de legacy, integración omnicanal.</td><td>Diseño de contratos, monitoreo y control de latencia.</td></tr><tr><td>PA-04</td><td>Data foundation + BI</td><td>Ingesta, curación y exposición de datos para analítica y decisiones.</td><td>Indicadores ejecutivos, operación, calidad y forecasting.</td><td>Calidad de fuentes, semántica común y gobierno del dato.</td></tr><tr><td>PA-05</td><td>Copilot/Agent grounded</td><td>Agente especializado con conocimiento autorizado, instrucciones y límites operativos.</td><td>Asistencia experta, consulta de políticas, soporte a decisiones.</td><td>Cobertura documental, versionamiento y revisión humana.</td></tr></tbody></table><h2>Guía rápida de selección</h2><ol><li>Si el reto principal es experiencia y captura de solicitudes, comenzar por Portal + procesos + datos.</li><li>Si el problema es gestión, seguimiento y SLA, comenzar por Caso 360 con CRM.</li><li>Si existen múltiples sistemas y dependencias, priorizar Hub de integración API/eventos.</li><li>Si la necesidad es visibilidad y gobierno del dato, usar Data foundation + BI.</li><li>Si el valor está en escalar conocimiento experto, usar Copilot/Agent grounded.</li></ol><h2>Patrón recomendado para el taller</h2><p>Para el caso del “AI Architecture Advisor”, el patrón base es Copilot/Agent grounded combinado con Data foundation documental y, cuando aplique, con Hub de integración para futuras acciones o consultas transaccionales.</p>
+</body>
+</html>

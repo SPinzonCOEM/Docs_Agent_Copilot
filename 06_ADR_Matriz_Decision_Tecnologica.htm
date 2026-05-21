@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADR y Matriz de Decisión Tecnológica</title>
+    
+<style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.7;
+        color: #333;
+        background-color: #fff;
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 30px 20px;
+    }
+    h1 {
+        color: #1F4E79;
+        font-size: 28px;
+        border-bottom: 3px solid #1F4E79;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
+    h2 {
+        color: #1F4E79;
+        font-size: 22px;
+        margin-top: 30px;
+        margin-bottom: 12px;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 6px;
+    }
+    h3 {
+        color: #2E75B6;
+        font-size: 18px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    p {
+        margin-bottom: 12px;
+        font-size: 15px;
+    }
+    .subtitle {
+        color: #666;
+        font-size: 16px;
+        margin-bottom: 25px;
+        font-style: italic;
+    }
+    ul, ol {
+        margin-left: 25px;
+        margin-bottom: 15px;
+    }
+    li {
+        margin-bottom: 6px;
+        font-size: 15px;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        font-size: 14px;
+    }
+    th {
+        background-color: #1F4E79;
+        color: white;
+        padding: 10px 12px;
+        text-align: left;
+        font-weight: 600;
+    }
+    td {
+        padding: 9px 12px;
+        border: 1px solid #ddd;
+    }
+    tr:nth-child(even) { background-color: #f5f8fc; }
+    tr:hover { background-color: #e8f0fe; }
+    .nav {
+        background-color: #1F4E79;
+        padding: 12px 20px;
+        margin: -30px -20px 30px -20px;
+        text-align: center;
+    }
+    .nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 14px;
+    }
+    .nav a:hover { text-decoration: underline; }
+    .index-list {
+        list-style: none;
+        margin-left: 0;
+        padding: 0;
+    }
+    .index-list li {
+        margin-bottom: 15px;
+        padding: 15px 20px;
+        background: #f5f8fc;
+        border-left: 4px solid #1F4E79;
+        border-radius: 4px;
+    }
+    .index-list li a {
+        color: #1F4E79;
+        text-decoration: none;
+        font-size: 17px;
+        font-weight: 600;
+    }
+    .index-list li a:hover { text-decoration: underline; }
+    .index-list li p {
+        color: #666;
+        font-size: 14px;
+        margin-top: 5px;
+        margin-bottom: 0;
+    }
+</style>
+
+</head>
+<body>
+<div class="nav"><a href="index.html">← Volver al índice</a></div><h1>ADR y matriz de decisión tecnológica</h1><p class="subtitle">Documento ejemplo para registrar alternativas y justificar decisiones de arquitectura.</p><table><thead><tr><th>Uso esperado
+El agente puede tomar este documento como patrón para comparar opciones y recomendar una decisión razonada en lenguaje de comité.</th></tr></thead></table><h2>Plantilla resumida de ADR</h2><table><thead><tr><th>Campo</th><th>Contenido esperado</th></tr></thead><tbody><tr><td>ID</td><td>ADR-AAAAMM-##</td></tr><tr><td>Tema</td><td>Decisión de arquitectura a tomar</td></tr><tr><td>Contexto</td><td>Problema, restricciones y drivers</td></tr><tr><td>Alternativas</td><td>Opciones consideradas</td></tr><tr><td>Decisión</td><td>Alternativa seleccionada</td></tr><tr><td>Justificación</td><td>Razones técnicas, de negocio y riesgo</td></tr><tr><td>Impactos</td><td>Consecuencias positivas, costos y deudas</td></tr><tr><td>Aprobadores</td><td>Comité o responsables</td></tr></tbody></table><h2>Ejemplo de decisión</h2><table><thead><tr><th>Criterio</th><th>Opción A: solo repositorio documental</th><th>Opción B: agente grounded en Microsoft 365</th><th>Opción C: agente + plataforma transaccional</th></tr></thead><tbody><tr><td>Velocidad de adopción</td><td>Alta</td><td>Alta</td><td>Media</td></tr><tr><td>Cobertura de conocimiento</td><td>Media</td><td>Alta</td><td>Alta</td></tr><tr><td>Capacidad de acción</td><td>Baja</td><td>Media</td><td>Alta</td></tr><tr><td>Complejidad de implementación</td><td>Baja</td><td>Media</td><td>Alta</td></tr><tr><td>Gobierno requerido</td><td>Bajo</td><td>Medio</td><td>Alto</td></tr><tr><td>Escenario recomendado</td><td>Consulta estática</td><td>Soporte experto y recomendación</td><td>Automatización avanzada</td></tr></tbody></table><h2>Recomendación ejemplo</h2><p>Para un taller ejecutivo y una primera fase de despliegue, se recomienda la Opción B: agente grounded en Microsoft 365, porque permite acelerar el acceso al conocimiento experto, demostrar valor con bajo esfuerzo de integración y madurar posteriormente hacia escenarios transaccionales.</p><h2>Criterios de aprobación sugeridos</h2><ul><li>Alineación con principios de arquitectura y seguridad.</li><li>Disponibilidad y calidad del conocimiento fuente.</li><li>Valor esperado para decisiones y productividad.</li><li>Viabilidad operativa y facilidad de adopción.</li><li>Capacidad futura de escalar a integraciones o automatizaciones.</li></ul>
+</body>
+</html>
